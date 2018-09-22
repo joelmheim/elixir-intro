@@ -70,9 +70,12 @@
               Elixir also provides a productive tooling and an extensible design. The latter is supported by compile-time metaprogramming with macros and polymorphism via protocols.
             </h3>
           </section>
-
           <section>
             <h1>Repl demo</h1>
+          </section>
+          <section>
+            <h1>Installation</h1>
+            <h4>https://elixir-lang.org/install.html</h4>
           </section>
           <section>
             <h2>Excercise</h2>
@@ -80,110 +83,17 @@
           </section>
 
         </section>
-
+        
         <section>
-          <section>
-            <h1>Elm Architecture</h1>
-          </section>
-
-          <section data-background="images/elm-architecture.jpg" data-background-size=1000px>
-          </section>
-
-          <section>
-            <h2>Or if you would prefer code...</h2>
-            <pre><code class="elm">
-              import Html exposing (..)
-
-              -- MODEL
-              type alias Model = { ... }
-
-              -- UPDATE
-              type Msg = Reset | ...
-
-              update : Msg -> Model -> Model
-              update msg model =
-              case msg of
-                Reset -> ...
-                ...
-
-              -- VIEW
-              view : Model -> Html Msg
-              view model =
-              ...
-            </code></pre>
-          </section>
-
-          <section>
-            <h1>Our first web-app</h1>
-          </section>
-
-          <section>
-            <div style="position:absolute;top:0;margin-top:0">
-            <pre><code class="elm" style="width:1000px">
-import Html exposing (Html, button, div, text)
-import Html.Events exposing (onClick)
-
-main =
-  Html.beginnerProgram { model = model, view = view, update = update }
-
--- MODEL
-type alias Model = Int
-
-model : Model
-model =
-  0
-
--- UPDATE
-type Msg = Increment | Decrement
-
-update : Msg -> Model -> Model
-update msg model =
-  case msg of
-    Increment ->
-      model + 1
-
-    Decrement ->
-      model - 1
-
--- VIEW
-view : Model -> Html Msg
-view model =
-  div []
-    [ button [ onClick Decrement ] [ text "-" ]
-    , div [] [ text (toString model) ]
-    , button [ onClick Increment ] [ text "+" ]
-    ]
-            </code></pre>
-          </div>
-          </section>
-
-          <section>
-            <h2>Excercise</h2>
-            <p>Add a button and functionality to reset the counter to the page.</p>
-          </section>
-        </section>
-
-        <section>
-          <section>
-            <h1>Test driven development</h1>
-          </section>
-
-          <section>
-            <h2>FizzBuzz in Elm</h2>
-            <p>Demo</p>
-          </section>
+          <h1>Elixir applications</h1>
         </section>
 
         <section>
           <h2>Resources and further reading</h2>
           <ul>
-            <li><a href="http://elm-lang.org">Elm-lang.org:</a> Official Elm site.</li>
-            <li><a href="https://guide.elm-lang.org/">Elm guide:</a> An introduction to Elm.</li>
-            <li><a href="https://guide.elm-lang.org/install.html">Installing Elm:</a> Guide for installing Elm on all operating systems</li>
-            <li><a href="http://elm-lang.org/examples">Elm examples.</a></li>
-            <li><a href="http://elmprogramming.com/">Beginning Elm</a></li>
-            <li><a href="http://elm-tutorial.org/">Elm tutorial</a></li>
-            <li><a href="https://www.sitepoint.com/functional-reactive-programming-elm-introduction/">Functional reactive programming with Elm.</a></li>
+            <li><a href="http://elixir-lang.org">Elixir-lang.org:</a> Official Elixir site.</li>
+            <li><a href="https://elixir-lang.org/getting-started/introduction.html">Elixir intro guide:</a> An introduction to Elixir.</li>
+            <li><a href="https://elixir-lang.org/install.html">Installing Elixir:</a> Guide for installing Elixir on all operating systems</li>
           </ul>
         </section>
 
